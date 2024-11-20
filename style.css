@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+#card {
+    position: relative;
+    height: 247px;
+    width: 400px;
+    perspective: 1000px;
+}
+#container {
+    position: absolute;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+#card:hover #container {
+    transform: rotateY(-180deg);
+}
+.sides {
+    backface-visibility: hidden;
+    height: 247px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0.5, 0.5, 0.5);
+    background: 
+    url('istockphoto-1334079644-612x612-removebg-preview.png') no-repeat center center / cover,
+    linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(70,1,1,1) 100%);
+    background-blend-mode: overlay; 
+    padding: 20px 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+.names{
+    font-size: 18px;
+    font-weight: bold;
+}
+#images {
+    display: flex;
+}
+#hologram {
+    margin-left: auto;
+}
+#number{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    font-size: 20px; 
+    font-family: 'Courier New', monospace;
+    letter-spacing: 2px;
+}
+#code {
+    margin-top: 5px;
+    font-size: 12px; 
+    letter-spacing: 1px;
+}
+#validity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+}
+.validity {
+    font-size: 12px;
+    font-weight: bold;
+}
+.dates {
+    font-size: 12px;
+}
+#back {
+    font-size: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: rotateY(180deg);
+}
+.belements {
+    margin-top: 10px;
+}
+#box {
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+}
+.statements {
+    margin-top: 10px;
+    font-size: 10px;
+    line-height: 1.2;
+}
